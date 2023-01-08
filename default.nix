@@ -9,9 +9,8 @@ pkgs.stdenv.mkDerivation {
 
   dontFixup = true;
   
-  nativeBuildInputs = [ pkgs.pkg-config ];
-
   buildInputs = [
+    pkgs.pkg-config
     pkgs.libftdi1
     pkgs.libusb1
     pkgs.hostname

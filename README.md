@@ -4,7 +4,7 @@ This is a simple Nix package for the [Framework Laptop Embedded Controller proje
 
 Please read the warnings on the original project page before using this. This can cause hardware damage to your device. 
 
-You can build this with `nix-build`, or install it on NixOS by adding
+Make sure to clone with `git clone --recurse-submodules`. You can build this with `nix-build`, or install it on NixOS by adding
 
 ```sh
 (import path/to/fw-ectool/default.nix)
