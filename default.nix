@@ -29,5 +29,11 @@ pkgs.stdenv.mkDerivation {
   installPhase = ''
     mkdir -p $out/bin
     mv $out/util/ectool $out/bin
+    # cleanup for build artifacts
+    rm -r $out/gen
+    rm -r $out/libsharedobjs
+    rm -r $out/RO
+    rm -r $out/RW
+    rm -r $out/util
   '';
 }
