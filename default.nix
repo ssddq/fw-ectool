@@ -2,13 +2,11 @@ let
   pkgs = import <nixpkgs> { };
 in 
 pkgs.stdenv.mkDerivation {
-  pname = "fw-ectool";
-  name = "fw-ectool";
+  pname   = "fw-ectool";
+  version = "0.0.16715";
 
   src = ./.;
 
-  dontFixup = true;
-  
   buildInputs = [
     pkgs.pkg-config
     pkgs.libftdi1
@@ -19,6 +17,7 @@ pkgs.stdenv.mkDerivation {
   configurePhase = ''
     cp -r $src/* .
     cd EmbeddedController
+    patchShebangs ./util/getversion.sh
     bash util/getversion.sh > util/ec_version.h
   '';
 
