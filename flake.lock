@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "ec-git": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672877366,
+        "narHash": "sha256-m7Zb6a4azmpLxFHUdLh3mj8EmJaaCmueuJihfdtBVlc=",
+        "ref": "refs/heads/hx20-hx30",
+        "rev": "38c1b38254793a2ed25861330ebc786daa5b48fb",
+        "revCount": 16715,
+        "type": "git",
+        "url": "https://github.com/FrameworkComputer/EmbeddedController"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/FrameworkComputer/EmbeddedController"
+      }
+    },
+    "ec-local": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1672877366,
+        "narHash": "sha256-m7Zb6a4azmpLxFHUdLh3mj8EmJaaCmueuJihfdtBVlc=",
+        "ref": "refs/heads/hx20-hx30",
+        "rev": "38c1b38254793a2ed25861330ebc786daa5b48fb",
+        "revCount": 16715,
+        "type": "git",
+        "url": "file:./EmbeddedController"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:./EmbeddedController"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1676931714,
+        "narHash": "sha256-Zh2q9it1lpLHD/Bj1EaQjmfRmireQ1v48pgLFsPLz+U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "be2cc24ae2e6160118f344c7e8216acce6c1cc45",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ec-git": "ec-git",
+        "ec-local": "ec-local",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
